@@ -1,0 +1,102 @@
+/* フォントファミリーに 'Antic Didone' を指定 */
+body, .english-text {
+  font-family: "Antic Didone", serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* 日本語のテキストには 'BIZ UDPゴシック' を追加指定 */
+.japanese-text {
+  font-family: "BIZ UDPゴシック", "Antic Didone", serif;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+.work h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 2.2em;
+}
+
+/* 以下はポートフォリオのスタイル */
+section {
+  padding: 10px;
+}
+
+.title h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+.title ul {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+img {
+  width: 70%;
+  height: auto;
+}
+
+#dashbord {
+  display: block; /* インライン要素からブロック要素に変更 */
+  margin: auto; /* 自動的に中央に配置 */
+}
+
+.text ul {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.detail h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 1.3em;
+}
+
+.detail ul {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  line-height: 1.5;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 50px !important;
+  margin-left: 50px !important;
+  font-size: 1.8em;
+  align-items: center;
+}
+
+/* 初期状態で非表示 */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* スクロールすると表示 */
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
