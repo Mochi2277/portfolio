@@ -7,7 +7,7 @@ body, .english-text {
 
 /* 日本語のテキストには 'BIZ UDPゴシック' を追加指定 */
 .japanese-text {
-  font-family: "BIZ UDPゴシック", "MSゴシック", "Antic Didone", serif;
+  font-family: "BIZ UDPゴシック", "メイリオ", Meiryo, "Antic Didone", serif;
 }
 
 header {
