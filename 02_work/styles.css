@@ -61,7 +61,7 @@ img {
 
 .detail h2 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: normal;
   font-size: 1.3em;
 }
@@ -100,3 +100,70 @@ nav a {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* メディアクエリ: ディスプレイの幅が480px以下の場合 */
+@media screen and (max-width: 480px) {
+  body, .english-text {
+    font-size: 0.9em; /* 全体的に文字サイズを小さく */
+  }
+
+  header {
+    padding: 5px; /* ヘッダーのパディングを小さく */
+  }
+
+  .work h2,
+  .title h2{
+    font-size: 1.8em; /* 見出しのフォントサイズを調整 */
+    margin-bottom: 5px; /* マージンを小さく */
+  }
+
+  .title h2,
+  .detail h2 {
+    font-size: 1.2em;
+  }
+  section {
+    padding: 5px; /* セクションのパディングを小さく */
+  }
+
+  .text ul {
+    margin-left: 20px; /* 左マージンを調整 */
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-align: left;
+  }
+
+  .title ul,
+  .detail ul {
+    margin-left: 20px; /* 左マージンを調整 */
+    margin-right: 20px;
+    font-size: 0.9em;
+  }
+
+  img {
+    width: 90%; /* 画像の幅を100%に調整 */
+  }
+
+  #dashbord {
+    display: block;
+    margin: auto;
+  }
+
+  nav {
+    flex-direction: row; /* ナビゲーションを横に配置 */
+    justify-content: center; /* 中央寄せ */
+    align-items: center;
+    margin-bottom: 20px; /* マージンを小さく */
+  }
+
+  nav a {
+    margin-right: 20px !important; /* 右マージンを追加 */
+    margin-left: 20px !important; /* 左マージンを追加 */
+    font-size: 2.5em; /* ナビゲーションのフォントサイズを調整 */
+  }
+}
+
+  .fade-in,
+  .fade-in.is-visible {
+    transform: none; /* スクロール時の変化を削除 */
+  }
+
