@@ -7,7 +7,7 @@ body, .english-text {
 
 /* 日本語のテキストには 'BIZ UDPゴシック' を追加指定 */
 .japanese-text {
-  font-family: "BIZ UDPゴシック", "メイリオ", Meiryo, "Antic Didone", serif;
+  font-family: "BIZ UDPゴシック", "Antic Didone", serif;
 }
 
 header {
@@ -115,6 +115,7 @@ img {
   list-style-type: none;
   margin-left: 100px;
   padding: 0;
+  line-height: 1.5;
 }
 
 .history li {
@@ -212,6 +213,7 @@ img {
   list-style-type: none;
   margin-left: 100px;
   padding: 0;
+  line-height: 1.5;
 }
 
 .reserch li {
@@ -252,4 +254,60 @@ body.scrolled #topBtn {
 .fade-in.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* メディアクエリ: ディスプレイの幅が480px以下の場合 */
+@media screen and (max-width: 480px) {
+  header {
+    justify-content: center; /* ヘッダー内の要素を中央寄せ */
+  }
+
+  nav {
+    display: none; /* メニュー非表示 */
+  }
+
+  .profile-content {
+    flex-direction: column; /* プロフィール画像とテキストを縦に並べる */
+    align-items: center; /* 中央寄せ */
+    margin-left: 0;
+  }
+
+  .profile-image {
+    margin-right: 0; /* 間隙間なし */
+    max-width: 50%;
+  }
+
+  .skills .skill-container,
+  .work-container {
+    flex-direction: column; /* 横並びから縦並びに変更 */
+    align-items: center; /* 中央寄せ */
+  }
+
+  .work-item {
+    width: 100%; /* 幅を100%に設定 */
+  }
+
+  .history span,
+  .reserch span {
+    display: block; /* ブロック要素に変更 */
+    width: auto; /* 幅を自動調整 */
+  }
+
+  .profile-text {
+    margin-left: 0%;
+    margin-top: 10%;
+  }
+
+  .japanese-text,
+  .history ul,
+  .reserch ul,
+  body {
+    font-size: 0.9em;
+    margin-left: 0%; /* 全体的に文字サイズを小さく */
+  }
+
+  #topBtn img {
+    width: 40px; /* ボタンの幅を小さく調整 */
+    height: 40px; /* ボタンの高さを小さく調整 */
+  }
 }
